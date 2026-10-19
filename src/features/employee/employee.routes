@@ -1,0 +1,14 @@
+
+import EmployeePage from "./pages/EmployeePage";
+import EmployeeDetail from "./pages/EmployeeDetail";
+
+export const employeeRoutes = [
+  {
+    path: "employees", // Khi ghép vào sẽ thành đường dẫn: /employees
+    element: <EmployeePage />,
+  },
+  {
+    path: "employees/:id", // Khi ghép vào sẽ thành đường dẫn: /employees/123
+    element: <EmployeeDetail />,
+  },
+];
